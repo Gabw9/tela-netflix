@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Bombando</a></li>
+                <li><a href="#">Minha lista</a></li>
+                <li><a href="#">Navegar por idiomas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Natal no Cine Drive-In</h1>
+            <div class="buttons">
+                <button>Assistir</button>
+                <button>Mais informações</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2>Lançamentos</h2>
+        <div class="carrossel-imgs">
+            <div class="movie-item">
+                <img src="https://s2-techtudo.glbimg.com/HVl_gXR83vnDgFDKxI2dE_zoEys=/0x0:1200x700/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/o/D/ieDFWBTXyor9nFgYZdyA/enola-holmes-2.jpg" alt="Lançamento 1" data-title="Enola Holmes 2" data-synopsis="Enola Holmes está de volta! Agora ela trabalha como detetive, solucionando um grande mistério envolvendo uma jovem desaparecida.">
+                <p>Enola Holmes 2</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://www.minhaoperadora.com.br/wp-content/uploads/2022/03/netflix.jpg" alt="Lançamento 2" data-title="Netflix Original" data-synopsis="Um documentário que revela os segredos por trás do sucesso global da Netflix e seus desafios.">
+                <p>Netflix Original</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://www.mundoconectado.com.br/wp-content/uploads/2023/04/capa-da-segunda-temporada-de-sweet-tooth-1.jpg" alt="Lançamento 3" data-title="Sweet Tooth" data-synopsis="Em um mundo pós-apocalíptico, híbridos de humanos e animais são caçados, e um menino veado embarca em uma aventura épica.">
+                <p>Sweet Tooth</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2024/07/umbrella_estreias_agosto_netflix__wh304tv1.jpg?ims=1210x544/filters:quality(75)" alt="Lançamento 4" data-title="Umbrella Academy" data-synopsis="Uma família disfuncional de super-heróis tenta resolver o mistério por trás da morte de seu pai e prevenir um apocalipse iminente.">
+                <p>Umbrella Academy</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://observatoriodocinema.uol.com.br/wp-content/plugins/seox-image-magick/imagick_convert.php?width=904&height=508&format=.jpg&quality=91&imagick=uploads-observatoriodocinema.seox.com.br/2024/08/feios-netflix-1024x576.jpg" alt="Lançamento 5" data-title="Feios" data-synopsis="Em um mundo onde a beleza é a norma, um grupo de 'feios' luta por aceitação e direitos em uma sociedade superficial.">
+                <p>Feios</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2>Comédias de Natal</h2>
+        <div class="carrossel-imgs">
+            <div class="movie-item">
+                <img src="https://i.ytimg.com/vi/W6nIRxz6RVE/maxresdefault.jpg" alt="Comédia 1" data-title="Comédia 1" data-synopsis="Sinopse da Comédia 1">
+                <p>Comédia 1</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://i.ytimg.com/vi/lvvZFIpmtMw/hqdefault.jpg" alt="Comédia 2" data-title="Comédia 2" data-synopsis="Sinopse da Comédia 2">
+                <p>Comédia 2</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://outrashistorias.com.br/wp-content/uploads/2019/12/ferias-frustradas-de-natal-chevy-chase.jpg" alt="Comédia 3" data-title="Comédia 3" data-synopsis="Sinopse da Comédia 3">
+                <p>Comédia 3</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://euamoonatal.com/wp-content/uploads/2021/11/Filme-Love-Hard-Um-Match-Surpresa.-Nova-Comedia-Romantica-de-Natal-da-Netflix-Imperdivel.jpg" alt="Comédia 4" data-title="Comédia 4" data-synopsis="Sinopse da Comédia 4">
+                <p>Comédia 4</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://i.ytimg.com/vi/KAYNRBNbeaI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDCttHQl-7S3qsxY8U5yI8Xgq_tUw" alt="Comédia 5" data-title="Comédia 5" data-synopsis="Sinopse da Comédia 5">
+                <p>Comédia 5</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="movie-title"></h2>
+            <img id="movie-image" src="" alt="">
+            <p id="movie-synopsis"></p>
+            <button id="watch-button">Assistir ao Filme</button>
+        </div>
+    </div>
+
+    <script src="node.js"></script>
+</body>
+</html>
